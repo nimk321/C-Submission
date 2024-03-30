@@ -64,21 +64,3 @@ public class Account
         }
     }
 }
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        // Example usage
-        // Creating different accounts using different constructors
-        Account checkingAccount = new Account("123456");
-        Account savingsAccount = new Account("789012", "Savings");
-
-        // Depositing and withdrawing money
-        checkingAccount.Deposit(100);
-        checkingAccount.Withdraw(50);
-
-        savingsAccount.Deposit(500, "Monthly savings");
-        savingsAccount.Withdraw(100, "Emergency fund");
-    }
-}
